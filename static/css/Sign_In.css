@@ -1,0 +1,186 @@
+body{ background: var(--main-dark);}
+
+#div-alert
+    {
+        position: absolute;
+        display: none;
+        padding: 1%;
+        background:  var(--main-yellow)!important;
+        height: 50px;
+        margin-top: -0.5%;
+        
+    }
+#div-alert p
+    { 
+        text-align: center; 
+        color: var(--main-dark);
+        font-size: 14pt;
+        margin-top: 1%;
+    }
+
+
+
+#Main
+    {
+        background-color: var(--secondary-dark);
+        margin-top: 5%;
+        width: 80%;
+        height: 550px;
+        border-radius: 4px;
+    }
+
+#side-info
+    {
+        background-color: var(--main-green);
+        width: 40%;
+        height: 100%;
+        float: left;
+        margin-left: -1.5%;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        text-align: center;
+        padding: 4%;
+        transition: 1s all;
+    }
+
+#div-info
+    {
+        background-color: var(--main-dark);
+        border-radius: 2%;
+        padding: 10%;
+        margin-top: 38%;
+       
+    }
+
+#side-info #div-info #redirect-sign-up 
+    {
+        background-color: var(--main-green);
+        color: var(--main-dark);
+        padding: 4%;
+        margin-top: 10%;
+        transition: 1s all;
+        width: 150px;
+    }
+
+#side-info #div-info #redirect-sign-up:hover
+    {
+        box-shadow: 0 0 0 0.2rem var(--main-green);
+        background-color: transparent !important;
+        color: var(--main-green);
+    }
+
+
+    
+
+#Main #div-form  
+    {
+        width: 60%;
+        float: right;
+    }
+
+#Main #div-form .fa-user
+    {
+        background: var(--main-dark);
+        color: var(--secondary-dark);
+        border-radius: 100%;
+        padding: 4%;
+        font-size: 50pt;
+        margin-top: 6%;
+        margin-left: 40%;
+
+    }
+
+
+#Main #div-form form
+    {
+        margin-top: 15%;
+    }
+
+#Main #div-form #id_email, #id_password
+    {
+        background-color: var(--main-dark);
+        border-left: 2px solid var(--main-orange) !important;
+        height: 50px;
+        padding-left: 8%;
+        border: none;
+        margin-bottom: 2%;
+        transition: 0.8s;
+        color:rgb(123, 124, 126);
+        border-radius: 0;
+        
+    }
+
+#Main #div-form #id_email:focus, #id_password:focus
+    {
+        
+        box-shadow: 0 0 0 0.2rem var(--secodary-dark);
+        background-color: var(--secodary-dark) !important;
+    }
+
+
+#Main #div-form .fa-envelope, .fa-lock
+    {
+        font-size: 18pt;
+        position: absolute;
+        margin-top: 1%;
+        margin-left: 1.5%;
+        color: var(--main-orange);
+    }
+
+#Main #div-form #sign-in
+    {
+        padding: 2%;
+        width: 150px;
+        background-color: var(--main-green);
+        transition: 1s all;
+        margin-left: 35%;
+        margin-top: 12%;
+        color: var(--main-dark);
+        cursor: pointer;
+    }
+
+#Main #div-form #sign-in:disabled
+    {
+        box-shadow: 0 0 0 0.2rem var(--main-green);
+        background-color: transparent;
+        color: var(--main-green);
+    }
+#Main #div-form #sign-in:hover
+    {
+        box-shadow: 0 0 0 0.2rem var(--main-green);
+        background-color: transparent;
+        color: var(--main-green);
+    }
+
+#Main #div-form .fa-eye, .fa-eye-slash
+    {
+        margin-left: 50%;
+        margin-top: -4.2%;
+        position: absolute;
+        font-size: 14pt;
+        cursor: pointer;
+        color: rgb(123, 124, 126);
+    }
+
+#Main #div-form .fa-eye { display: none;}
+ 
+#div-sign-in-progress
+    {
+        position: absolute;
+        background: #000000;
+        display: none;
+        opacity: 0.6;
+        height: 100%;
+        width: 100%;
+        margin-top: -45.3%;
+        text-align: center;
+    }
+.spinner-border
+    {
+        margin-top: 23%;
+        margin-left: 50%;
+        width: 5rem;
+        height: 5rem;
+        display: none;
+        
+    }

@@ -1,0 +1,122 @@
+body{background-color: var(--main-dark);}
+
+/*========= FORM FOR SEARCH ==========*/
+
+.navbar form #search
+    {  
+        width: 600px;
+        height: 49px;
+        padding-left: 2%;
+        background-color: var(--secondary-dark);
+        color: white;
+        padding-inline-end: 70px;
+        border: none;
+        transition: 2s all;
+    }
+
+.navbar form #search:focus
+    {
+        outline: 0;
+        box-shadow: 0 0 0 0.1rem var(--secondary-dark);
+    }
+
+.navbar form .btn-search
+    {
+        position: absolute;
+        padding-left: 2%;
+        padding-top: 1.4%;
+        margin-left: 48.1%;
+        margin-top: -4.1%;
+        height: 46px;
+        border-top-left-radius: 80px;
+        background-color: var(--main-green);
+        border: none !important;
+        transition: 1s all;
+    }
+
+.navbar form .btn-search:hover
+    {
+        box-shadow: 0 0 0 0.2rem var(--main-green);
+        background-color: transparent !important;
+        color: var(--main-green);
+    }
+
+
+.logo
+    {
+        position: absolute;
+        margin-top: 16%;
+        text-decoration: none;
+    }
+.logo:hover{text-decoration: none;}
+.logo  img
+    {
+      
+        width:100px;
+        height:100px;
+        border-radius: 8px;
+        margin-top: -1%;
+        margin-left: -1%;
+
+    }
+.logo span{ 
+    font-size: 60pt!important;
+    color:  var(--main-orange);
+}
+
+
+/*======= MENU =============*/
+.navbar-collapse 
+    {
+        margin-left: 5%;
+        margin-top: 0%;
+        width: 40%;
+       
+    }
+
+.navbar-collapse li {margin-left: 4%; }
+.navbar-collapse a { color: var(--main-dark);}
+.navbar-collapse button a:hover { color: var(--main-green);}
+.navbar-collapse li button
+    {
+        border: none;
+        background-color: var(--main-green) !important;
+        height: 50px;
+        transition: 1s;
+        box-shadow: 0 0 0 0.2rem var(--gray-dark);
+        
+    }
+
+.navbar-collapse li button:hover
+    {
+        box-shadow: 0 0 0 0.2rem var(--main-green);
+        background-color: transparent !important;
+        color: var(--main-green)!important;
+    }
+.navbar-collapse li button:focus
+    {
+        box-shadow: 0 0 0 0.2rem var(--main-green);
+    }
+
+.dropdown-menu{ padding: 0; margin-top: 5%; margin-left: 30%; background: var(--secondary-dark);    }
+.dropdown-menu li a
+    {
+        transition: all 2s; 
+        margin-left: -4.5%;
+        width: 200px; 
+        color: white;
+        border-radius: 2px;
+    }
+
+.dropdown-menu li a:hover   
+    {
+        
+        background: var(--main-green);
+        color: var(--main-dark);
+    }
+
+.line
+    {
+        margin-top: 11%;
+        background: var(--secondary-dark);
+    }

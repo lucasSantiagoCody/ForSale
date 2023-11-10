@@ -1,0 +1,168 @@
+body{ background-color: var(--main-dark); color: white!important;}
+
+#menu  .row ul
+    {
+        display: inline-block;
+        margin-top: 2%;
+        margin-left: 7.5%; 
+    }
+#menu .row ul li{list-style: none;}
+#menu .row ul li button
+    {
+        font-size: 25pt;
+        margin-left: 10% ;
+        border-radius: 0;
+        box-shadow: none;
+        color: var(--main-orange);
+    }
+.set-border-bottom
+    {
+        border-bottom: 2px solid var(--main-green);
+        
+    }
+
+/*
+#dashboards
+    { 
+        border: 2px solid red;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center!important;
+        padding: 1%;
+        height: 800px;
+       
+    }
+#dashboards-vendas{
+    width: 90%;
+    border: 2px solid green; 
+    padding: 1%;
+} 
+#dashboards-vendas #dashboard-products
+    {
+        border: 2px solid rgb(72, 38, 82);
+        text-align: center;
+        width: 42.5%;
+        margin-right: 5%;
+        padding: 1%;
+    }
+#dashboards-vendas #dashboard-facturamento
+    {
+        border: 2px solid rgb(208, 255, 0);
+        text-align: center;
+        width: 42.5%;
+        padding: 1%;
+    }
+
+*/
+
+#cards-settings .row h3{ margin-top: 7%;}
+#cards-settings 
+    { 
+        
+       
+        margin-left: 15%;
+        width: 100%; 
+        margin-top: 7%;
+        color: var(--main-green);
+
+
+    }
+#cards-settings #card-my-info, #card-config-account
+    {
+        border-radius: 4px;
+        padding: 2%;
+        height: 300px;
+        width: 460px;
+        cursor: pointer;
+        margin-left: 1%;    
+        background-color: transparent;
+        background:  linear-gradient(rgb(1, 15, 27), rgb(1,11,20)45%, rgb(31, 54, 78) );
+        
+    }
+.hidden
+    {
+        display: none;
+        opacity: 0;
+        filter: blur(15px);
+        transition: all 1s;
+        transform: translateY(40%);
+    }
+.show
+    {
+        display: block;
+        opacity: 1; 
+        filter: blur(0);
+        transition: all 2s;
+        transform: translateY(0);
+    }
+#cards-settings i{font-size:50pt!Important; margin-top: 18%; color: var(--main-orange);}
+
+#settings-my-info
+    {
+        display: block;
+    }
+
+#settings-config-account
+    {
+        display: none;
+    }
+
+#settings-my-info 
+    {
+       box-shadow: 0 0 0.2rem var(--secondary-dark);
+       border-top: 40px solid var(--secondary-dark);
+       height: 800px;
+       padding: 2%;
+       margin-bottom: 5%;
+    }
+#settings-my-info #informations
+    {
+        margin-top: 10%;
+    }
+#settings-my-info #informations input   
+    {
+        padding-left: 14%;
+        border-radius: 2px;
+        color: rgb(123, 124, 126);
+        border: none;
+        margin-bottom: 2%;
+        height: 47px;
+        width: 500px;
+        background: var(--secondary-dark);
+        box-shadow: none;
+        
+    }
+#settings-my-info #informations label   
+    {
+        position:absolute;
+        background: var(--main-orange);
+        margin-right: 2%;
+        width: 120px;
+        height: 46.3px;
+        padding-top: 0.6%;
+        border-radius: 0;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        
+    }
+
+
+#settings-my-info #informations i
+    {
+        position: absolute;
+        margin-left: 35.2%;
+        cursor: pointer;
+        color: var(--main-orange);
+        margin-top: -4.8%;
+        font-size: 15pt;
+        
+    }  
+#settings-my-info #informations button[type="submit"]
+    {
+        background: var(--secondary-dark);
+        color: white;
+        width: 500px;
+        padding: 1%;
+        border-radius: 2px;
+        box-shadow: none;
+    }

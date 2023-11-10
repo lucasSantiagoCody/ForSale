@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'title' %} Sign In {% endblock %}
+
+{% block 'head' %} 
+    <link rel="stylesheet" href="{% static 'css/Sign_In.css' %}"> 
+{% endblock %}
+
+{% block 'content' %}
+    <div class="container-fluid fixed-top " id="div-alert">
+        <p class="translate-middle-y top-50" id="p-info-sign-in"></p>            
+    </div>   
+    <div class="container-fluid animate__animated animate__backInDown" id="Main">
+        <aside id="side-info">
+            <h1>ForSale</h1>
+                <div id="div-info">
+                    <p class="text-light"> 
+                        <!-- change text in future -->
+                        To keep connected with us
+                        please login with your personal info
+                    </p>
+                    <input type="button" class="btn" id="redirect-sign-up" value="Criar Conta" onclick="redirect('/accounts/sign_up')">
+                </div>  
+        </aside> 
+
+        <div class="container" id="div-form">
+            <i class="fas fa-user"></i>
+            <form method="POST"  id="form">
+                {% csrf_token %}
+                <i class="fas fa-envelope"></i>
+                {{form.email}}
+                <i class="fas fa-lock"></i>
+                {{form.password}}
+                <i class="fas fa-eye-slash" ></i>
+                <i class="fas fa-eye" ></i>
+                <input type="submit" class="btn" id="sign-in" value="Entrar"  disabled \>
+            </form>
+            
+            
+        </div>
+    </div>
+
+<div class="justify-content-center" id="div-sign-in-progress"> 
+    <div class="spinner-border text-success" role="status"></div>
+</div>
+{% endblock %}
+
+{% block 'jsFiles' %}
+    <script src="{% static 'js/hide_show_password.js' %}"></script>
+    <script src="{% static 'js/Sign_In.js' %}"></script>
+{% endblock %}

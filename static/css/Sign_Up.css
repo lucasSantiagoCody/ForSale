@@ -1,0 +1,328 @@
+body{background-color: var(--main-dark); }
+#div-alert
+    {
+        position: absolute;
+        display: none;
+        padding: 1%;
+        background:  var(--main-yellow);
+        height: 50px;
+        margin-top: -0.5%;
+        
+    }
+#div-alert p
+    { 
+        text-align: center;  
+        color: var(--main-dark);
+        font-size: 14pt;
+    }
+
+
+#Main
+    {
+    
+        background-color: var(--secondary-dark);
+        margin-top: 5.7%;
+        width: 80%;
+        height: 550px;
+        border-radius: 4px;
+        margin-bottom: 2%;
+        display: block;
+    }
+
+#side-info
+    {
+        background-color: var(--main-green);
+        width: 40%;
+        height: 100%;
+        float: left;
+        margin-left: -1.5%;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        text-align: center;
+        padding: 4%;
+        transition: 1s all;
+    }
+
+#info
+    {
+        background-color: var(--main-dark);
+        border-radius: 2%;
+        padding: 10%;
+        margin-top: 38%;
+       
+    }
+
+#side-info #info #btn-redirect-sign-in
+    {
+        background-color: var(--main-green);
+        color: var(--main-dark);
+        padding: 4%;
+        margin-top: 10%;
+        transition: 1s all;
+        width: 150px;
+    }
+
+#side-info #info #btn-redirect-sign-in:hover
+    {
+        box-shadow: 0 0 0 0.2rem var(--main-green);
+        background-color: transparent !important;
+        color: var(--main-green);
+    }
+
+#Main #div-form  
+    {
+        width: 60%;
+        float: right;
+    }
+
+#Main #div-form #icon-user
+    {
+        background: var(--main-dark);
+        color: var(--secondary-dark);
+        border-radius: 100%;
+        padding: 4%;
+        font-size: 45pt;
+        margin-top: 4%;
+        margin-left: 40%;
+
+    }
+
+
+#Main #div-form #form
+    {
+        margin-top: 10%;
+    }
+
+#Main #div-form #id_email, #id_password, #id_username
+    {   
+        background-color: var(--main-dark) !important;
+        border-left: 2px solid var(--main-orange)!important;
+        border: none;
+        height: 50px;
+        padding-left: 8%;
+        padding-inline-end: 100px;
+        border: none;
+        margin-bottom: 3%;
+        transition: all 1s;
+        border-radius: 0;
+        color: rgb(123, 124, 126);
+        width: 560px;
+        
+    }  
+
+
+
+
+#Main #div-form #id_email:focus, #id_password:focus, #id_username:focus
+    {
+        
+        box-shadow: 0 0 0 0.2rem var(--secodary-dark);
+        background-color: var(--secodary-dark) !important;
+        border-left: 2px solid var(--main-orange);
+       
+    }
+
+#Main #div-form #sign-up
+    {
+        height: 50px;
+        padding-left: 2%;
+        width: 150px;
+        background-color: var(--main-green);
+        transition: 1s all;
+        margin-left: 35%;
+        margin-top: 8%;
+        color: var(--main-dark);
+        border: none;
+    }
+
+#Main #div-form #sign-up:hover
+    {
+   
+        background-color: var(--main-green);
+        color: var(--main-dark);
+        box-shadow: 0 0 0 0.2rem var(--main-green);
+
+    }
+
+#Main #div-form #sign-up:disabled{
+        background-color: transparent  !important;
+        box-shadow: 0 0 0 0.2rem var(--main-green)!important;
+        color: var(--main-green)!important;
+    }
+    
+
+#Main #div-form #input-icon
+    {
+        font-size: 18pt;
+        position: absolute;
+        margin-top: 1%;
+        margin-left: 1.5%;
+        color: var(--main-orange);
+        
+    }
+#Main #div-form #validate-icon-1, #error-icon-1, #validate-icon-2, #error-icon-2, #validate-icon-3, #error-icon-3
+    {
+        margin-left: 48%;
+        margin-top: -4.8%;
+        position: absolute; 
+        font-size: 14pt;
+    }
+
+#Main #div-form #validate-icon-1, #validate-icon-2, #validate-icon-3{display: none;}
+
+
+#Main #div-form .fa-eye, .fa-eye-slash
+    {
+        margin-left: 43%;
+        margin-top: -4.8%;
+        position: absolute;
+        font-size: 14pt;
+        cursor: pointer;
+        color: rgb(123, 124, 126);
+    }
+
+#Main #div-form .fa-eye { display: none;}
+
+#card-account-type
+    {
+        
+        display: none;
+        position: absolute;
+        background: white;
+        height: 550px;
+        width: 100%;
+        margin-left: -41.6%;
+        margin-top: -45.8%;
+        padding: 4%;
+        border-radius: 4px;
+    }
+
+#card-account-type h2{ color: var(--main-dark);}
+
+#card-account-type .cards
+    {
+        
+        margin-left: 1%;
+        margin-top: 2%;
+        padding: 1%;
+        height: 300px;
+        background: var(--main-dark);
+        border-radius: 8px;
+        cursor: pointer; 
+
+        
+    }
+
+
+#card-account-type .cards .icon i  
+    {
+        font-size: 50px;
+        position: relative !important; 
+        margin-left: 1%;
+        margin-top: 5%;
+        padding: 10%;
+        border-radius: 100%;
+        color: var(--main-dark);
+        background: linear-gradient(var(--main-green) , var(--main-dark));
+
+    }
+
+
+
+#card-account-type .cards .icon
+    {
+        position: relative !important;
+        width: 140px;
+        height: 120px;
+        margin-left: 28%;
+        margin-top: -8.8%!important;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        box-shadow: 0 10px 0 var(--main-orange);
+        background: #ffffff;
+        z-index: 1000;
+        
+    }
+#card-account-type .cards .icon::before
+    {
+        content: '';
+        position: absolute;
+        margin-top: 11.9%;
+        left: -50px;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border-top-right-radius: 50px;
+        box-shadow: 15px -15px 0 15px #ffffff;
+
+    }
+
+#card-account-type .cards .icon::after
+    {
+        content: '';
+        position: absolute;
+        margin-top: 11.9%;
+        right: -50px;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border-top-left-radius: 50px;
+        box-shadow: -15px -15px 0 15px #ffffff;
+
+    }
+
+#card-account-type .cards span, h3 
+    {
+        margin-top: 16%;
+        color: white;
+    }
+
+#card-account-type .cards #btn-account-type-ep,#btn-account-type-ni, #btn-account-type-un
+    {
+        margin: 5.5%;
+        padding: 4% !important;
+        border: none; 
+        background: linear-gradient(var(--secondary-dark), var(--main-orange))!important;
+        box-shadow: none;   
+    }
+
+#card-account-type .row   
+    {
+        margin-top: 4% ;
+    }   
+
+#card-account-type .row button
+    {
+        margin-left: 2%;
+        background: linear-gradient(white 80%, var(--main-green));
+        border: none;
+    }
+
+#create-account
+    {
+        position: absolute;
+        background: #000000;
+        display: none;
+        opacity: 0.6;
+        height: 100%;
+        width: 100%;
+        margin-top: -48%;
+        text-align: center;
+    }
+#create-account .spinner-border
+    {
+        margin-top: 23%;
+        margin-left: 50%;
+        width: 5rem;
+        height: 5rem;
+        display: none;
+        
+    }
+#created-account-icon, #error-create-account-icon
+    { 
+        font-size: 100pt;
+        position: absolute;
+        margin-top: 21%;
+        margin-left: -4%;
+        display: none;
+    }

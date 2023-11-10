@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'title' %} My Account {% endblock %}
+
+{% block 'head' %} 
+    <link rel="stylesheet" href="{% static 'css/MyAccount.css' %}"> 
+{% endblock %}
+
+{% block 'content' %}
+<div class="container" id="menu">
+        <div class="row">
+            <ul>
+                <li>
+                    <button class="btn" >Gráficos</button>
+                    <button class="btn "id="btn-settings">Config</button>
+                    <button class="btn">Mais</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+<div class="container-md" id="dashboards">
+    <div class="row" id="dashboards-vendas">
+        <div class="col-sm-6" id="dashboard-products">
+        
+        </div>
+        <div class="col-sm-6" id="dashboard-facturamento"></div>
+    </div>
+    <div class="row d-none" id="prev">
+        
+    </div>
+    
+</div>
+
+<div class="container" id="cards-settings">
+    <div class="row hidden">
+        <div class="col-6 text-center " id="card-my-info">
+            <h3>Minhas Informações</h3>
+            <i class="fas fa-info-circle" ></i>
+        </div>
+        <div class="col-6 text-center " id="card-config-account">
+            <h3>Configurar Conta</h3>
+            <i class="fas fa-gears fs-5"></i>
+        </div>
+    </div>
+</div>
+<!-- ============================= all about Settings ============================= -->
+<div class="container" id="settings-my-info">
+    <div id="informations">
+        <form method="POST">
+            {% csrf_token %}
+            <label class="btn  b-none text-light" id="label_first_name">Nome</label>
+            <input type="text" name="first_name" id="first_name" class="form-control" disabled /> 
+            <i class="fas fa-edit i-first-name"></i>
+
+            <label class="btn  b-none text-light" id="label_email">Email</label>
+            <input type="text" name="email" id="email" class="form-control" disabled /> 
+            <i class="fas fa-edit i-email"></i>
+
+            <label class="btn  b-none text-light" id="label_account_type">T. de conta</label>
+            <input type="text" name="account_type" id="account_type" class="form-control" disabled /> 
+            <i class="fas fa-edit i-account-type"></i>
+
+            <label class="btn  b-none text-light" id="label_phone_number">número</label>
+            <input type="text" name="phone_number" id="phone_number" class="form-control" disabled /> 
+            <i class="fas fa-edit i-phone-number"></i>
+
+            <label class="btn  b-none text-light" id="label_nif">nif</label>
+            <input type="text" name="nif" id="nif" class="form-control" disabled /> 
+            <i class="fas fa-edit i-nif"></i>
+
+            <label class="btn  b-none text-light" id="label_born_date">d.nascimento</label>
+            <input type="text" name="born_date" id="born_date" class="form-control" disabled /> 
+            <i class="fas fa-edit i-born-date"></i>
+
+            <label class="btn  b-none text-light" id="label_localization">localização</label>
+            <input type="text" name="localization" id="localization" class="form-control" disabled /> 
+            <i class="fas fa-edit i-localization"></i>
+
+            <button type="submit" class="btn">Salvar</button>
+        </form>
+
+    </div>
+
+
+
+
+<!-- ============================= Image Preview ============================= -->
+<!--
+    <div id="image-profile">
+        <form method='POST' enctype="multipart/form-data" action='{% url "AddImage" %}' id="form-image-profile">
+            {% csrf_token %}
+            <label for="image-input">
+                <i class="fas fa-image" id="image-preview-default"></i>
+                <img id="image-preview" for="image-input">
+            </label>
+
+            <input type="file" id="image-input" onchange="ImagePreview('#image-input', '#image-preview', '#image-preview-default')"/>
+        </form>
+    </div>
+    
+    <div id="user-info"> 
+        
+        <form role="form" id="form-user-info" method="POST"> 
+            {% csrf_token %}   
+            
+        
+            <label class="btn  b-none">Name</label>
+            <input type="text" name="first_name" id="first_name" class="form-control" value="{{user_informations.main_informations.first_name}}" disabled /> 
+            <i class="fas fa-edit i-first-name"></i>
+                            
+            <label class="btn  b-none">Email</label>
+            <input type="text" name="email" class="form-control" value="{{user_informations.main_informations.username}}" disabled /> 
+            <i class="fas fa-edit i-email"></i>
+                                
+            <label class="btn  b-none">Password</label>
+            <input type="password" name="password" class="form-control" value="{{user_informations.main_informations.password}}" disabled /> 
+            <i class="fas fa-edit i-password"></i>
+                   
+            <label class="btn  b-none">Account Type</label>
+            <select name="account_type" class="form-select">
+                <option {% if user_informations.main_informations.account_type == Empresarial %}selected{% endif %}value="Empresarial" >Empresarial</option>
+                <option  {% if user_informations.main_informations.account_type == Negócio_Individual %}selected{% endif %} value="Negócio_Individual" >Negócio_Individual</option>
+                <option {% if user_informations.main_informations.account_type == Usuário_Normal %}selected{% endif %} value="Usuário_Normal" >Usuário_Normal</option>
+            </select>
+            <i class="fas fa-edit i-account-type"></i>
+                
+            {% if user_informations.aditional_informations %}
+                <label class="btn  b-none">Phone</label>
+                <input type="text" name="phone_number" class="form-control" value="{{user_informations.aditional_informations.phone_number}}" disabled /> 
+                <i class="fas fa-edit i-phone-number"></i>
+                            
+                <label class="btn  b-none">NIF</label>
+                <input type="text" name="nif" class="form-control" value="{{user_informations.aditional_informations.nif}}" disabled /> 
+                <i class="fas fa-edit i-nif"></i>
+                        
+                <label class="btn  b-none">Born Date</label>
+                <input type="text" name="born_date" class="form-control" value="{{user_informations.aditional_informations.born_date}}" disabled /> 
+                <i class="fas fa-edit i-born-date"></i>
+                            
+                <label class="btn  b-none">Localization</label>
+                <input type="text" name="localization" class="form-control" value="{{user_informations.aditional_informations.localization}}" disabled /> 
+                <i class="fas fa-edit i-localization"></i>   
+            {% endif %}
+            
+            <form role="form" method="POST" id="form-config-account"  class="mt-5">
+                {% csrf_token %}
+        
+                <input type="text" minlength="9" maxlength="9" required name="phone_number" placeholder="Número Celular" class="form-control" id="phone_number"  />
+                
+                <input type="text" minlength="14" maxlength="14" required name="nif" placeholder="Número Bilhete" class="form-control" /> 
+                
+                <input type="date"  required name="born_date"  class="form-control" /> 
+            
+                <input type="text" maxlength="20" required name="localization" placeholder="Localização" class="form-control"  /> 
+                
+                <input type="submit" class='btn' value="Concluir" id="button-config-account">  
+            
+                <div class="justify-content-center" id="card-finally-operation">
+                    <div class="spinner-border text-success" role="status"></div>
+                    <i class="fas fa-check-circle success-icon text-success "></i>
+                    <i class="fas fa-exclamation-circle error-icon text-danger"></i>
+                    <p class='text-danger' id='error-description'> </p>    
+                </div>
+            </form><input type="submit" class='btn' value="Save">
+
+        </form>
+</div>
+            -->
+                
+            
+                
+            
+
+<!-- ========================= Config Account =============================== -->
+
+<div class="container" id="settings-config-account">
+    <h4 class="text-center mt-5">Configure a sua conta</h4>
+</div>
+
+
+    
+{% endblock %}
+
+{% block 'jsFiles' %}
+    
+    <script src="{% static 'js/My_Account.js' %}"></script>
+    <script src="{% static 'node_modules/chart.js/dist/chart.cjs.map' %}"></script>
+    
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

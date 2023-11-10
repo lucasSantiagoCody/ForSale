@@ -1,0 +1,95 @@
+.venda
+    {
+        background-color: var(--main-dark);
+        width: 36.1cm;
+        height: 320px;
+        position: absolute; 
+        margin-top: -14.4%;
+        padding: 2%;   
+        display: none;
+        
+    }
+
+.venda .fa-close
+    {
+       float: right;
+       cursor: pointer;
+    }
+
+.venda label #preview
+
+    {
+        width: 140px;
+        height: 140px;
+        margin-left: 15%;
+        display: none;
+        position: absolute;
+    }
+
+.venda #labelImage i    
+    {
+        font-size: 140px;
+        margin-left: 210px;
+        cursor: pointer;
+       
+    }
+
+.venda form 
+    {
+        float: left;
+    }
+
+.venda form input[type='text'], input[type='number']
+    {
+        width: 350px;
+        margin-bottom: 2%;
+        padding: 3%;
+        border: none;
+        border-radius: 2px;
+    }
+
+.venda  form input[type='text']:focus, input[type='number']:focus
+    {
+        
+        box-shadow: 0 0 0 0.1rem var(--gray-dark);
+       
+        
+    }
+    
+
+.venda form .row #id_descricao_produto
+    {
+        width: 703px;
+    }
+
+
+.venda form p   
+    {
+        color: white;
+        margin-top: 1%;
+    }
+
+.venda #id_direito_negociacao
+    {
+        width: 100px;
+        margin-left: 2%;
+    }
+
+
+.venda form input[type="submit"]
+    {
+        padding: 2%;
+        width: 150px;
+        background-color: var(--main-green);
+        transition: 1s all;
+        margin-top: 1%;
+        margin-left: -2%;
+        color: var(--main-dark);
+    }
+
+.venda form input[type='submit']:hover
+    {
+        background-color: transparent;
+        box-shadow: 0 0 0 0.2rem var(--main-green);
+        color: var(--main-green);
+    }

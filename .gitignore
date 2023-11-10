@@ -1,0 +1,12 @@
+venv
+manage.py
+usuarios/__pycache__
+templates/static/AnimateCss
+templates/static/bootstrap
+templates/static/fontawesome
+templates/static/JQuery
+Main/__pycache__
+forsale/__pycache__
+forale/migrations
+vendas/__pycache__
+

@@ -1,0 +1,28 @@
+id;password;last_login;is_superuser;username;first_name;last_name;email;is_staff;is_active;date_joined;account_type
+21;pbkdf2_sha256$390000$0mXLTEQEQ9ogztzzB6Ey1y$S311TgEwATJcIpnvlMwqQxzK7tGGyBUucQPh+VilPxI=;2023-04-20 17:03:35.105144;1;lucas;;;lucas@gmail.com;1;1;2023-04-20 17:03:14.989283;
+22;pbkdf2_sha256$390000$Sgx4zlgcaa98111YSD4SUI$jksf6eOPnDnCKd8VvLNJQokx0QILo2DpKx1glG4wEHc=;;0;lucascody@gmail.com;;;lucascody@gmail.com;0;1;2023-04-20 17:46:11.360034;Usuário Normal
+23;pbkdf2_sha256$390000$SHIevi9F4ib4au9vuxSKnT$dygvsJ5E2LVjZOJEBdgwbH/BtLalmcIjWDMGE0pEeto=;;0;lucascoday@gmail.com;;;lucascoday@gmail.com;0;1;2023-04-20 17:47:23.063249;Usuário Normal
+24;pbkdf2_sha256$390000$2qKw6CebLGVsYhJSGFdDl4$3l02j9UFwFQHSHKZhjdavGdBEFI8rUBt8NTBTV+8Aeg=;;0;lucassantiagocody@gmail.com;;;lucassantiagocody@gmail.com;0;1;2023-04-20 17:49:00.083074;Usuário Normal
+25;pbkdf2_sha256$390000$IRGRF3Fdl6kDyEj2CIwHcf$MY40sluEJrbVPmGgAwrrBqOlp4npg9TD8cFzw3ztUuc=;;0;lucascoddy@gmail.com;;;lucascoddy@gmail.com;0;1;2023-04-20 17:52:55.919951;Negócio Individual
+26;pbkdf2_sha256$390000$JDwYJLviGbNNHsr8JU8ShA$r5o1BNFS6AJnroEFgvZsb6Bc6hBvH3AFID4g7tVyXY0=;;0;lucdddascody@gmail.com;;;lucdddascody@gmail.com;0;1;2023-04-20 17:53:33.261012;Usuário Normal
+27;pbkdf2_sha256$390000$zwthZAZjceGJNmloTIkQb2$47huJ60KCZ2gRyaX3FUD4+gBw7+sSU9dJsht70Pa4n4=;;0;adsfsdfsff@gmail.com;;;adsfsdfsff@gmail.com;0;1;2023-04-20 17:54:33.460308;Usuário Normal
+28;pbkdf2_sha256$390000$6cRyHwH8fwGo71uvI0iOoF$YIwlV2MQLcK/rMUuptJvu8lx1ilRkqvtV/uFcxyntlQ=;;0;aaaa@gmail.com;;;aaaa@gmail.com;0;1;2023-04-20 17:55:10.277303;Negócio Individual
+29;pbkdf2_sha256$390000$fhQ79GvWR9KTG3l36DUM56$pXJdHwyUM91Db+zBZ+Ro5AoO0oX0RVn6TZ1GUatIxJI=;;0;suleman@yahoo.com;;;suleman@yahoo.com;0;1;2023-04-20 18:33:14.028384;Usuário Normal
+30;pbkdf2_sha256$390000$GjhojANVU0tepCrR9Ql4Mw$Yz1aNWkurmTLdjaNUuL3gsrmgExV89VcPZjSsI7zJX8=;;0;sulemaan@yahoo.com;;;sulemaan@yahoo.com;0;1;2023-04-20 18:37:04.480461;Usuário Normal
+31;pbkdf2_sha256$390000$Ij5BT0J0zrplcFOPoHlzBr$85bctNMwVePJ/cqGeEOvmPDK0LbtZi2Fkr7jQ4oSNgA=;;0;olivia@yahoo.com;;;olivia@yahoo.com;0;1;2023-04-20 18:37:58.020993;Empresarial
+32;pbkdf2_sha256$390000$yfsJEBARXLTWtXZraC3vBF$gEc54TRq2BN+1LKGAt6wDa+uFGyXzNr+OGNvXfzoFCU=;;0;miguel@gmail.com;;;miguel@gmail.com;0;1;2023-04-20 18:45:11.362074;Empresarial
+33;pbkdf2_sha256$390000$pGhhtc5Jxwotrs488xI4Rn$RcBYnrfHyCTPDx76nIJyekG+KBBEByY3o8SFPe1vth4=;;0;paulo@yahoo.com;;;paulo@yahoo.com;0;1;2023-04-20 18:50:02.496921;Usuário Normal
+34;pbkdf2_sha256$390000$Hiq5V392Jlz5TwqbzpXeZk$ppRHcXcQUPn8/xr/snpHrG3maLGsVeT5LWOQMzBXUb8=;;0;AntonioFernandes@yahoo.com;;;AntonioFernandes@yahoo.com;0;1;2023-04-20 18:52:26.781415;Empresarial
+35;pbkdf2_sha256$390000$kG0mN1l3q6E6BvxNEC9rBx$gtV2GgNG9yPab0bHluLJIfR/dtXx3fGm2//6069krfE=;;0;david@gmail.com;;;david@gmail.com;0;1;2023-04-20 18:57:26.364333;Negócio Individual
+36;pbkdf2_sha256$390000$TIjAGtEs6IBSGTwoI7X4uD$GJCSBQ7En26OIko+lIhAQMm5St8/g8xkxCnIXT30IAg=;;0;bill@gmail.com;;;bill@gmail.com;0;1;2023-04-20 18:58:42.182111;Empresarial
+37;pbkdf2_sha256$390000$QAcWKWFNmK1rK8195lynvf$CVIwfhg/XXEpoWHatHZFvM62c7haPRhSkWN/eAzyrd8=;;0;marcosJose@gmail.com;;;marcosJose@gmail.com;0;1;2023-04-20 19:00:22.378176;Usuário Normal
+38;pbkdf2_sha256$390000$5WaDoAEFCxyMnqaO9LdPf9$4oW7Av4wVvF2udB2bFp9FvkvDHrwWIvv9BARQfCwoic=;;0;carlosAlbino@yahoo.com;;;carlosAlbino@yahoo.com;0;1;2023-04-20 19:02:25.862992;Negócio Individual
+39;pbkdf2_sha256$390000$QUNXElCbYNA6w6iO8BN1Iz$tJQJ0S/oXawAkWlrIXqg7b4zrazn4P3qw5mz5e4u2qc=;;0;cristinaSantiago@gmail.com;;;cristinaSantiago@gmail.com;0;1;2023-04-20 19:05:43.482621;Empresarial
+40;pbkdf2_sha256$390000$wQbLYKCwH3vejUQzGVw2FH$6ExrBzchNUBjmXLF5o7n7SXJ8ehM7383pZ2clJ3aBgQ=;;0;Andregustavo@yahoo.com;;;Andregustavo@yahoo.com;0;1;2023-04-20 19:10:18.863585;Usuário Normal
+41;pbkdf2_sha256$390000$fsxaq9DZR4koU191zXMgdI$f1cey2DyRr1CyN7DeITg+oCOwKn9JE5ywJ2yH3Fjhvk=;;0;ReimondRedRedington@gmail.com;;;ReimondRedRedington@gmail.com;0;1;2023-04-20 19:14:41.022194;Empresarial
+42;pbkdf2_sha256$390000$mnB1Le3V5kVDu9dakJzYTT$jppNsHX37HtBX+wAuyhBK0U4gYZJEMlvn+UUB3NaQL4=;;0;Keen@yahoo.com;;;Keen@yahoo.com;0;1;2023-04-20 19:17:42.565300;Empresarial
+43;pbkdf2_sha256$390000$BsJ9Vhu2w0Cr4Sn1R6LhzI$L172jUFE2J+/GBzNN3gU7AXtqL6capWdeYw1zg2EtDE=;;0;yaraMonteiro@gmail.com;;;yaraMonteiro@gmail.com;0;1;2023-04-20 19:19:03.611238;Usuário Normal
+44;pbkdf2_sha256$390000$YKF9irEVyABY2VbCDLh0rj$8O41BF+1QiMs8hSjdV3zyjdJvjv/j1k43pxtzwMTqpc=;;0;blacklucky4203@gmail.com;;;blacklucky4203@gmail.com;0;1;2023-04-20 19:23:31.530211;Negócio Individual
+45;pbkdf2_sha256$390000$acAPQLx4BdiBq6RFZK0g9Z$eKnDcMjkpoMaROcXNfQ7brzVTMeO0z1d8KhfeHYyaeA=;;0;thomas@yahoo.com;;;thomas@yahoo.com;0;1;2023-04-20 19:26:36.747048;Empresarial
+46;pbkdf2_sha256$390000$SiNlSOvZcXLymhAgAWcoVf$j3h5/QXNBSS8yy9fFxvyxF0wQ3smep1eXmhjfvWVYO8=;;0;AdaThorne@gmail.com;;;AdaThorne@gmail.com;0;1;2023-04-20 19:29:33.278859;Usuário Normal
+47;;;;;;;;;;;

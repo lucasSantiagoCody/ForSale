@@ -1,0 +1,29 @@
+[33mcommit 7f5411547d22def8955216506e1cc6e03b7860d2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Lucas Cody <LucasSantiagoCody@gmail.com>
+Date:   Sat Jun 24 20:11:33 2023 +0100
+
+    modificação dos templates | modificação da estrutura do projecto
+
+[33mcommit c7a8ebecefba84f63daa61b09ad25005c6aec522[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Lucas Cody <LucasSantiagoCody@gmail.com>
+Date:   Sun Apr 23 13:18:19 2023 +0100
+
+    Adição dos spinner loader | pré-finalização do SignUp | SignIn concluido
+
+[33mcommit 12f12ec61377939aa29f05234f0dc3c2f55be613[m
+Author: Lucas Cody <LucasSantiagoCody@gmail.com>
+Date:   Sat Apr 22 11:04:08 2023 +0100
+
+    Implementação do Json 0.1 | erro do login resolvido
+
+[33mcommit eb117b1046033590c0b167930aa041004138e1ea[m
+Author: Lucas Cody <LucasSantiagoCody@gmail.com>
+Date:   Fri Apr 21 23:23:35 2023 +0100
+
+    Implementação do json | erro no login
+
+[33mcommit c0008ef238b804ac1b1bcea9be7fd9b1cce3845f[m
+Author: Lucas Cody <LucasSantiagoCody@gmail.com>
+Date:   Wed Apr 5 19:33:33 2023 +0100
+
+    Inicio

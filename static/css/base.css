@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body{background-color: rgb(1, 11, 20);}
+body::-webkit-scrollbar-thumb
+    {
+        background: var(--main-orange);
+        border-radius: 4px;
+    }
+body::-webkit-scrollbar
+{
+    background: var(--secondary-dark);
+    width: 5px;
+}
+
+
+
+

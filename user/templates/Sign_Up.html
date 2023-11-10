@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'css/Sign_Up.css' %}">
+{% endblock %}
+
+{% block 'title' %} Sign Up {% endblock %}
+
+{% block 'content' %}
+
+<div class="container-fluid fixed-top" id="div-alert">
+    <p id="p-info-sign-up"></p>            
+</div>
+
+<div class="container animate__animated animate__backInDown" id="Main">
+
+    <aside id="side-info">
+        <h1>ForSale</h1>
+        <div id="info">
+            <p class="text-light"> 
+                <!-- change text in future -->
+                To keep connected with us
+                please login with your personal info
+            </p>
+            <input type="button" class="btn" id="btn-redirect-sign-in"  value="Entrar"  onclick="redirect('/accounts/sign_in')">
+        </div>
+    </aside>
+    
+    <div class="container" id="div-form">
+        <i class="fas fa-user" id="icon-user"></i> 
+        <form method="post"  id="form" >
+            {% csrf_token %}
+            <i class="fas fa-user" id="input-icon"></i>
+            {{form.username}}
+            <div class="alerts-icons">
+            <i class="fas fa-check-square text-success" id="validate-icon-1"></i>
+            <i class="fas fa-exclamation-triangle text-danger" id="error-icon-1"></i>
+            </div>
+            <i class="fas fa-envelope" id="input-icon"></i>
+            {{form.email}}
+            <i class="fas fa-check-square text-success" id="validate-icon-2"></i>
+            <i class="fas fa-exclamation-triangle text-danger" id="error-icon-2"></i>
+            
+            <i class="fas fa-lock" id="input-icon"></i>
+            {{form.password}}
+            <i class="fas fa-check-square text-success" id="validate-icon-3"></i>
+            <i class="fas fa-exclamation-triangle text-danger" id="error-icon-3"></i>
+            
+            <i class="fas fa-eye-slash" ></i>
+            <i class="fas fa-eye" ></i>  
+            <input type="hidden" id="account-type" name="account_type">
+
+            <input type="submit" value="Salvar" class="btn btn-dark" id="sign-up" disabled >
+            
+        </form>
+             
+        <!-- Mostrar automaticamente apôs o preenchimento do formulario-->
+        <main class="container text-center " id="card-account-type">
+            <h2>Tipo De Conta</h2>
+            <div class="row">
+               
+                <section class="col md-4 cards " id="account-type-ep" >
+                    <div class="icon">
+                        <i class="fas fa-institution"></i>
+                    </div>
+                    <h3 class="text-center ">Empresarial</h3>
+                    <button class="btn" id="btn-account-type-ep">Selecionar</button>
+                </section>
+                
+                <section class="col md-4 cards " id="account-type-ni">
+                    <div class="icon">
+                        <i class="fa-solid fa-briefcase"></i> 
+                    </div>
+                    <h3 class="text-center ">Negócio Individual</h3>
+                    <button class="btn" id="btn-account-type-ni">Selecionar</button>
+                </section>
+                
+                <section class="col md-4 cards " id="account-type-un">
+                    <div class="icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3 class="text-center ">Usuário Normal</h3>
+                    <button class="btn" id="btn-account-type-un">Selecionar</button>
+                </section>
+                
+            </div>
+        
+        </main>
+    </div>
+        
+    
+</div>
+
+<div class="justify-content-center" id="create-account">
+    <div class="text-success spinner-border"  role="status"></div>
+    <i class="fas fa-check-circle text-success" id="created-account-icon"></i>
+    <i class="fas fa-exclamation-circle text-danger" id="error-create-account-icon"></i>
+</div>
+
+
+{% endblock  %}
+
+{% block 'jsFiles' %}
+    <script src="{% static 'js/hide_show_password.js' %}"></script>
+    <script src="{% static 'js/Sign_Up.js' %}"></script>
+{% endblock %}
